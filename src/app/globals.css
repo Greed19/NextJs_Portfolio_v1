@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+a{
+  /* text-decoration: none; */
+  color: inherit; 
+}
+body{
+  @apply bg-black-100;
+}
+
+.main_container {
+  @apply  w-full text-white;
+}
+
+.section_container {
+  @apply sm:flex-row lg:flex-row md:flex-row flex-col text-white;
+}
+
+.mobile_center{
+  @apply sm:items-start lg:items-start md:items-start items-center;
+}
+
+.title_font{
+  @apply text-[5rem] font-[800]  sm:text-left lg:text-left md:text-left text-center;
+}
+
+.desc{
+  @apply text-[1.2rem];
+}
+
+.white{
+  @apply text-white;
+}
+
+.second_white{
+  @apply text-secondary-white;
+}
+
+.hero_btn{
+  @apply p-[20px] min-w-[120px] cursor-pointer border-none rounded-[10px];
+}
+
+.display_center {
+  @apply flex justify-center items-center;
+}
+.active_btn{
+  @apply bg-white text-black;
+}
+.form_input {
+  @apply p-[10px] rounded-[5px] border-none outline-none bg-black-200 text-white w-1/2;
+}
+.form_input_2 {
+  @apply p-[10px] rounded-[5px] border-none outline-none bg-black-100 text-white;
+}
+.admin_title {
+  @apply text-[2rem] font-bold;
+}
